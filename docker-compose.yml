@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend-python:
+    build:
+      context: ./backend_taskmentor
+    command: python app.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend_taskmentor:/app
+
+  backend-java:
+    build:
+      context: ./Backend
+    command: mvn spring-boot:run
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Backend:/usr/src/app
+
+  frontend-java:
+    build:
+      context: ./Frontend_taskmentor
+    command: mvn spring-boot:run
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Frontend_taskmentor:/usr/src/app

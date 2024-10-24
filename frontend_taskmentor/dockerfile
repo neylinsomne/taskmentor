@@ -1,0 +1,30 @@
+# Utilizar una imagen de Maven
+FROM maven:3.8.4-openjdk-17 AS build
+
+# Establecer el directorio de trabajo
+WORKDIR /usr/src/app
+
+# Copiar el archivo pom.xml y descargar dependencias
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+# Copiar el resto del código
+COPY . .
+
+# Compilar la aplicación
+RUN mvn clean package -DskipTests
+
+# Usar una imagen de OpenJDK para ejecutar el .jar
+FROM openjdk:17-jdk-slim
+
+# Establecer el directorio de trabajo
+WORKDIR /usr/src/app
+
+# Copiar el jar compilado
+COPY --from=build /usr/src/app/target/*.jar app.jar
+
+# Exponer el puerto 3000
+EXPOSE 3000
+
+# Comando para ejecutar la aplicación
+CMD ["java", "-jar", "app.jar"]
