@@ -15,4 +15,5 @@ hackaton> git log --since="2023-09-01" --until="2024-10-24" --pretty=format:"%h 
 * f7ca53e - 2024-10-23 17:34:56 -0500 - Elimino los repositorios anidados de backend_taskmentor y frontend_taskmentor
 
 
-Hubieron problemas en la entrada de git por cosas del historial, se tuvo que revisar una y otra vez, porque se estaba cargando el modelo de inteligencia artificial, pero este era muy grande y había que pagar, por eso se optó por borrarlo
+Hubieron problemas en la entrada de git por cosas del historial, se tuvo que revisar una y otra vez, porque se estaba cargando el modelo de inteligencia artificial, pero este era muy grande y había que pagar, por eso se optó por borrarlo. Y por eso los problemas del tiempo al subirlo. Gracias por su comprensión
+
