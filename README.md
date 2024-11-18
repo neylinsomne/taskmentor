@@ -1,10 +1,11 @@
 Pagína inclinada a ayudar a los estudiantes de bachillerato a estudiar para sus parciales, mediante la creación de examenes creados por IA, leyendo los parciales que le den, y calificandolos a tiempo real, rectificando los puntos a mejorar por el estudiante a la hora de dar sus respuestas. Todo esto en base a un Chatbot:
 
-modelo usado: 
-Berto (modelo bert pero adaptado al español) Se puede usar también llama 3.5
-técnicas usadas: RAG
-Finetunning
-Langchain con mongodb atlas
+* modelo usado: 
+  -Berto (modelo bert pero adaptado al español) Se puede usar también llama 3.5
+* técnicas usadas:
+  - RAG
+  - Finetunning
+  - Langchain con mongodb atlas
 
 
 
