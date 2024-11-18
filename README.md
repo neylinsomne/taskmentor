@@ -1,3 +1,37 @@
+Pagína inclinada a ayudar a los estudiantes de bachillerato a estudiar para sus parciales, mediante la creación de examenes creados por IA, leyendo los parciales que le den, y calificandolos a tiempo real, rectificando los puntos a mejorar por el estudiante a la hora de dar sus respuestas. Todo esto en base a un Chatbot:
+
+modelo usado: 
+Berto (modelo bert pero adaptado al español) Se puede usar también llama 3.5
+técnicas usadas: RAG
+Finetunning
+Langchain con mongodb atlas
+
+
+
+Al correrlo, porfavor recuerda usar tus tokens de Hugging Faces y del pipeline que cada modelo ofrece.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 hackaton> git log --since="2023-09-01" --until="2024-10-24" --pretty=format:"%h - %ad - %s" --date=iso --graph --all
 >> 
 * c19167d - 2024-10-23 22:24:11 -0500 - Nuevo inicio de historial sin API keys
